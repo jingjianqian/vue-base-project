@@ -1,17 +1,22 @@
 <template>
 	<div class="loyaut-container">
 		<div>
-			<sidebar class="sidebar-container" />
+			<navbar />
+      <sidebar />
 		</div>
 	</div>
 </template>
 <script>
-//import {Sidebar } from './components'
-	export default {
-		name: 'Layout',
-		componet:{
 
-		},
-		
-	}
+import { Navbar,Sidebar } from './components'
+
+console.log(Navbar);
+export default {
+  name: 'Layout',
+  components: {
+    Navbar,
+    Sidebar,
+    //AppMain
+  }
+}
 </script>

@@ -6,15 +6,17 @@ import Layout from '@/layout'
 Vue.use(Router)
 
 export const constantRoutes = [
- {
-    path: 'external-link',
+
+  {
+    path: '/',
     component: Layout,
-    children: [
-      {
-        path: 'https://panjiachen.github.io/vue-element-admin-site/#/',
-        meta: { title: 'External Link', icon: 'link' }
-      }
-    ]
+    redirect: '/dashboard',
+    children: [{
+      path: 'dashboard',
+      name: 'Dashboard',
+      component: () => import('@/view/dashboard/index'),
+      meta: { title: 'Dashboard', icon: 'dashboard' }
+    }]
   }
 ]
 

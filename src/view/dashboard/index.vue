@@ -1,22 +1,18 @@
 <template>
-	<div class="dashboard-container">
-		{{index}}
-	</div>
+  <div class="dashboard-container">
+    <div class="dashboard-text">name: {{ name }}</div>
+  </div>
 </template>
+
 <script>
-	export default{
-		name:'dashboard'
-		data(){
-			return{
-				currRole:'admin',
-				index:'dashboard'
-			}
-		},
-		computed:{
+import { mapGetters } from 'vuex'
 
-		},
-		created(){
-
-		}
-	}
+export default {
+  name: 'Dashboard',
+  computed: {
+    ...mapGetters([
+      'name'
+    ])
+  }
+}
 </script>
