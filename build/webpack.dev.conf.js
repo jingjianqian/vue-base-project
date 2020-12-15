@@ -92,4 +92,6 @@ module.exports = new Promise((resolve, reject) => {
       resolve(devWebpackConfig)
     }
   })
-})
+}).catch(function (){
+  //console.log("Promise catch");
+});
