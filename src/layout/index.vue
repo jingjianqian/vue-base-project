@@ -1,16 +1,15 @@
 <template>
-	<div class="loyaut-container">
-		<div>
-			<navbar />
-      <sidebar />
+	<div class="layout-container">
+	 	<div>
+			<Navbar />
+      <Sidebar />
 		</div>
-	</div>
+	</div> 
 </template>
 <script>
 
-import { Navbar,Sidebar } from './components'
+ import { Navbar,Sidebar } from './components'
 
-console.log(Navbar);
 export default {
   name: 'Layout',
   components: {
@@ -20,3 +19,6 @@ export default {
   }
 }
 </script>
+<style lang="scss" scoped>
+
+</style>

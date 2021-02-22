@@ -1,7 +1,7 @@
 <template>
 	
 	<div :class="{'has-logo':'true'}">
-		<logo v-if="showLogo" :collapse="isCollapse" />
+		<logo v-if="showLogo"  />
 		<div>
 	</div>
 	</div>

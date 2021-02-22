@@ -1,7 +1,7 @@
 <template>
-	<div class="Sidebar-logo-contaier" :class="{'collapse':collapse}">
+	<div class="Sidebar-logo-contaier" >
 		<transition mame="SidebarLogoFade">
-			<router-link v-f="collapse" key="collapse" class="sidebar-logo-link" to="/">
+			<router-link   class="sidebar-logo-link" to="/">
 				<img v-if="logo" :src="logo" class="sidebar-logo">
 				<h1 v-else class="sidebar-title">{{ title }}</h1>
 			</router-link>
@@ -29,3 +29,6 @@ export default {
 	}
 }
 </script>
+<style>
+
+</style>
